@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="match_parent">
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/dividerColor"
+        android:id="@+id/bookListView"
+        android:dividerHeight="1dp"
+        tools:context="com.example.rajeshaatrayan.booklisitngapp.Book">
+
+    </ListView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="No Books Found"
+        android:id="@+id/empty_view"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerInParent="true"/>
+
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbar"
+        />
+
+    <ImageView
+        android:id="@+id/nosignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nosignal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_internet_connection"
+        android:text="No internet connection"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/nosignal"/>
+</RelativeLayout>
